@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블로그 - 마곡 유흥 후기</title>
+    <meta name="description" content="마곡 유흥 후기 생생한 리얼 경험담! 마곡에서 진짜 핫한 유흥 정보, 형님들이 인정한 후기만 모았다. 전화 010-6279-0862로 문의하세요.">
+    <meta name="keywords" content="마곡 유흥, 마곡 유흥 후기, 마곡 밤문화, 마곡 술집, 마곡 클럽, 마곡 유흥정보, 마곡 가볼만한곳">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b05-mg-night-rv.vercel.app/blog">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-acid-yellow">
+    <meta property="og:title" content="마곡 유흥 후기 블로그 - 마곡 밤문화 No.1 정보">
+    <meta property="og:description" content="마곡 유흥 후기 생생한 리얼 경험담! 마곡에서 진짜 핫한 유흥 정보, 형님들이 인정한 후기만 모았다.">
+    <meta property="og:type" content="article">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #1a1a1a;
+            color: #f0e68c;
+            line-height: 1.6;
+            padding: 0 1rem;
+        }
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 3px solid #f0e68c;
+            display: inline-block;
+            padding-bottom: 0.3rem;
+            margin-bottom: 1rem;
+            color: #f0e68c;
+        }
+        h1 { font-size: 2.2rem; }
+        h2 { font-size: 1.8rem; }
+        h3 { font-size: 1.4rem; }
+        p, li, a, span, div {
+            font-size: 1rem;
+            color: #d3d3d3;
+        }
+        a {
+            color: #f0e68c;
+            text-decoration: underline wavy #f0e68c;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #ffd700;
+            text-decoration: none;
+            background: #333;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 2px solid #f0e68c;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #f0e68c;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        nav {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+        nav a {
+            color: #f0e68c;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.3rem 0.6rem;
+            border: 2px solid transparent;
+        }
+        nav a:hover {
+            border-color: #f0e68c;
+            background: #333;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: #f0e68c;
+            border-radius: 2px;
+        }
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 1rem;
+            }
+            nav.active {
+                display: flex;
+            }
+            .hamburger {
+                display: flex;
+            }
+        }
+        .tel-link {
+            display: inline-block;
+            background: #f0e68c;
+            color: #1a1a1a;
+            padding: 0.5rem 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border: 2px solid #f0e68c;
+            transition: 0.2s;
+        }
+        .tel-link:hover {
+            background: #ffd700;
+            color: #000;
+            border-color: #ffd700;
+        }
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        article {
+            background: #222;
+            padding: 2rem;
+            border: 2px solid #f0e68c;
+            margin-bottom: 2rem;
+        }
+        article time {
+            color: #888;
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        article p {
+            margin-bottom: 1rem;
+        }
+        .blog-cta {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .blog-cta .tel-link {
+            font-size: 1.2rem;
+            padding: 0.8rem 2rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 2px solid #f0e68c;
+            margin-top: 2rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">MG NIGHT</div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="nav">
+            <a href="/">홈</a>
+            <a href="/blog">블로그</a>
+            <a href="tel:010-6279-0862" class="tel-link">전화문의</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <time datetime="2025-04-10">2025.04.10</time>
+            <h1>마곡에서 진짜 재미본 후기 (feat. 형님들 인정)</h1>
+            <p>야, 나 원래 마곡 쪽은 잘 몰랐는데, 지난주에 형이랑 같이 가보고 완전 맛들렸어. 처음엔 그냥 술 한 잔 하려고 갔는데, 분위기부터가 달라. 내가 간 곳은 마곡역 근처에 있는 어떤 유흥주점인데, 간판도 별로 안 화려하고 조용해 보였거든? 근데 들어가자마자 '아 여기다' 싶었어. 인테리어도 감각적이고, 직원들도 친절하고. 제일 중요한 건 아가씨들 센스가 미쳤어. 술도 알아서 잘 따르고 분위기 메이킹도 찰떡이야. 나처럼 첫 방문이면 이런 곳을 추천해.</p>
+            <p>다음 날 형이 다른 곳도 데려갔는데, 거기는 또 다른 매력이 있었어. 노래방 퍼블릭인데, 시설이 완전 새 거야. 음향도 좋고, 리모컨으로 바로바로 곡 신청되고. 거기서도 아가씨들하고 같이 노래 부르고, 게임도 하고. 시간 가는 줄 몰랐다. 진짜 마곡 유흥 수준이 예전에 비해 많이 높아진 느낌이야. 나처럼 유흥 좋아하는 형들이면 무조건 한 번 와봐야 돼. 근데 그냥 아무 데나 가면 후회할 수 있으니까, 잘 알아보고 가는 게 좋아. 나처럼 다행히 형 덕분에 잘 골랐지만.</p>
+            <p>참고로 내가 간 곳들은 다 전화로 예약하고 갔어. 그냥 무작정 가면 자리가 없거나 대기 시간이 길더라고. 그래서 미리 전화해서 상황 물어보고 가는 게 팁이야. 마곡 유흥 제대로 즐기고 싶다면 <a href="tel:010-6279-0862">010-6279-0862</a>로 전화해봐. 직접 물어보니까 훨씬 정확하고, 형님들한테 딱 맞는 곳 추천해준다니까? 나도 다음에 또 갈 생각에 벌써부터 신난다.</p>
+            <div class="blog-cta">
+                <a href="tel:010-6279-0862" class="tel-link">☎ 지금 전화해서 예약하기</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2025 마곡 유흥 후기 | 문의: 010-6279-0862</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
